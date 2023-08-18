@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oswald:wght@200&family=Tilt+Prism&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.body{
+    background: url("../snake.jpeg");
+    min-height: 100vh;/*for use of perfect height*/
+    background-size: 100vw 100vh;/*snake must be left corner*/
+    display: flex;/*use image as flex box*/
+    justify-content: center;/*align items in centre horizontally*/
+    align-items: center; /*align item in centre vertically*/
+}
+
+
+#scoreBox{
+    position: absolute;
+    top: 9px;
+    right: 200px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Dancing Script', cursive;
+font-family: 'Merriweather', serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Tilt Prism', cursive; 
+}
+
+
+#hiscoreBox{
+    position: absolute;
+    top: 59px;
+    right: 200px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Dancing Script', cursive;
+font-family: 'Merriweather', serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Tilt Prism', cursive;
+}
+
+
+
+
+
+#board{
+    background: linear-gradient(rgb(245, 240, 240),rgb(207, 207, 180));
+    width: 90vmin;/*vh or vw se jo chotta hoga vo hoga vmin*/
+    height: 90vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18,1fr);
+    grid-template-columns: repeat(18,1fr);
+}
+.head{
+    background:linear-gradient(red,yellow);
+    border: 2px solid purple;
+    transform: scale(1.03);
+    border-radius: 9px;
+}
+.snake{
+    background-color: rgb(149, 0, 255);
+    border: .25min solid white;
+    border-radius: 12px;
+}
+.food{
+    background: linear-gradient(red,purple);
+    border: .25min solid black;
+    border-radius: 12px;
+}
